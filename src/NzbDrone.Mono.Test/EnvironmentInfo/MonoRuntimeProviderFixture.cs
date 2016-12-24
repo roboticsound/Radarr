@@ -6,6 +6,8 @@ using NzbDrone.Test.Common;
 
 namespace NzbDrone.Mono.Test.EnvironmentInfo
 {
+    [TestFixture]
+    [Platform("Mono")]
     public class DotNetRuntimeProviderFixture : TestBase<MonoRuntimeProvider>
     {
         [Test]

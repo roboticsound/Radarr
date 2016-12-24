@@ -5,6 +5,8 @@ using NzbDrone.Test.Common;
 
 namespace NzbDrone.Mono.Test.EnvironmentInfo
 {
+    [TestFixture]
+    [Platform("Mono")]
     public class LinuxVersionInfoFixture : TestBase<LinuxVersionInfo>
     {
         [Test]

@@ -5,6 +5,8 @@ using NzbDrone.Test.Common;
 
 namespace NzbDrone.Windows.EnvironmentInfo
 {
+    [TestFixture]
+    [Platform("Win")]
     public class DotNetRuntimeProviderFixture : TestBase<DotNetRuntimeProvider>
     {
         [Test]
