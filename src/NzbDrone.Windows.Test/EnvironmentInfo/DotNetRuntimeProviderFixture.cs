@@ -12,9 +12,8 @@ namespace NzbDrone.Windows.EnvironmentInfo
         [Test]
         public void should_get_framework_version()
         {
-            var version = new Version(Subject.RuntimeVersion);
-            version.Major.Should().Be(4);
-            version.Minor.Should().BeOneOf(0, 5, 6);
+            Subject.RuntimeVersion.Major.Should().Be(4);
+            Subject.RuntimeVersion.Minor.Should().BeOneOf(0, 5, 6);
         }
     }
 }
