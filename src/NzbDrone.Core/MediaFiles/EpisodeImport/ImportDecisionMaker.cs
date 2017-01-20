@@ -122,6 +122,7 @@ namespace NzbDrone.Core.MediaFiles.EpisodeImport
                     if (sceneSource)
                     {
                         localMovie.MediaInfo = _videoFileInfoReader.GetMediaInfo(file);
+                        var channels = localMovie.MediaInfo.FormattedAudioChannels;
                         if (shouldCheckQuality)
                         {
                             var width = localMovie.MediaInfo.Width;
